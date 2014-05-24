@@ -17,7 +17,7 @@ public class Game
       Player p2 = new Player(baseBudget, tieBudget);
       int base, tie; // numbers played in this round
       int playResult;
-      Random r = new Random(); // for the computer generated player
+      Random r = new Random(); // for the computer-generated player
       
       System.out.println("Welcome: you have a base budget of " + baseBudget +
                          " and a tie budget of " + tieBudget);
@@ -61,7 +61,7 @@ public class Game
           else if (playResult == -1)
           {
             p2.win();
-            System.out.println("You loose this round");
+            System.out.println("You lose this round");
           }
           else
           {
@@ -71,13 +71,13 @@ public class Game
       }
       
       System.out.println("Game over");
-      System.out.println("You have numer of wins: " + p1.getWins());
-      System.out.println("Your opponent has number of wins: " + p2.getWins());
+      System.out.println("Your wins: " + p1.getWins());
+      System.out.println("Your opponent's wins: " + p2.getWins());
       
       if (p1.getWins() > p2.getWins())
         System.out.println("You are the winner");
       else if (p1.getWins() < p2.getWins())
-        System.out.println("You are the looser");
+        System.out.println("You are the loser");
       else
         System.out.println("It's a tied game");
     }
