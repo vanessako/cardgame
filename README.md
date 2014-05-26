@@ -1,4 +1,4 @@
 cardgame
 ========
 
-Learning Java, made a simple card game
+Learning Java, made a simple guessing game
